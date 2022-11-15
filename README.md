@@ -38,6 +38,7 @@
 <em><i> Object and Arrays are non primitive data types </i> </em>
 <p> JavaScript is a dynamic and weakly typed language </p>
 
+<pre>
 <code>
 
 var num = 42 //It is of a Number type
@@ -45,3 +46,4 @@ num = "42" //it is of a String type
 num = true //it is of Boolean type
 
 </code>
+</pre>
