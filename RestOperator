@@ -1,0 +1,12 @@
+function combineTwoArrays(...args){
+
+    const combinedArray = [...args, "bmw"];
+
+    return combinedArray;
+
+}
+
+const subTwoNumbers = (a,b) => a - b;
+
+console.log(subTwoNumbers(4,2))
+console.log(combineTwoArrays("tata","volvo"));
