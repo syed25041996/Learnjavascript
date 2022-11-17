@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    margin: 40px;
+}
+
+h1{
+    text-align: center;
+}
+
+.underline{
+    border-bottom: 5px solid #000;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+/* Review block */
+
+article{
+    width: 50%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.design{
+    background: peachpuff;
+}
+
+img{
+    border-radius: 15px 50px;
+    margin: 20px auto;
+}
