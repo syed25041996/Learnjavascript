@@ -62,7 +62,7 @@ form{
     margin:10px;
 }
 
-input[type="email"], input[type="password"]{
+input[type="email"], input[type="password"], input[type="tel"], input[type="text"]{
     width: 80%;
     height: 5vh;
     padding: 10px;
@@ -87,8 +87,10 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     background: var(--header);
+    color: #F0F8FF;
     cursor: pointer;
 }
+
 
 /* checkbox */
 
@@ -126,4 +128,8 @@ h6{
 .center{
     margin-top: 15px;
     text-align: center;
+}
+
+.spacing{
+    margin-bottom: 40px;
 }
