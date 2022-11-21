@@ -1,0 +1,20 @@
+@use '../abstracts/variables' as *;
+
+@mixin button-submit {
+        width: 80%;
+        height: 7vh;
+        margin-left: 15px;
+        background: $body-color;
+        color: #fff;
+        font-size: large;
+        font-weight: bolder;
+        border: 0;
+        border-radius: 10px;
+
+        &:hover{
+            background: $header;
+            color: #F0F8FF;
+            cursor: pointer;
+        }
+    
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Learn-javascript",
+  "version": "1.0.0",
+  "description": "<h1> Data Types in JavaScript </h1>",
+  "main": "AddPropertiesToObject.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syed25041996/Learnjavascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syed25041996/Learnjavascript/issues"
+  },
+  "homepage": "https://github.com/syed25041996/Learnjavascript#readme",
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}

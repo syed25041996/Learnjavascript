@@ -1,0 +1,17 @@
+/* form component */
+form{
+    padding: 20px;
+    background: #fff;
+}
+
+.row {
+    margin:10px;
+}
+
+input[type="email"], input[type="password"], input[type="tel"], input[type="text"]{
+    width: 80%;
+    height: 5vh;
+    padding: 10px;
+    border: 0;
+    border-bottom: 1px solid black;
+}
