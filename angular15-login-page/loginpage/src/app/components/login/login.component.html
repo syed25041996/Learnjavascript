@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <link rel="stylesheet" href="/css/dist/main.css">
+    <title>Login page</title>
+</head>
+
+<body>
+    <!-- cover form in a contianer -->
+    <div class="container">
+        <div class="header">
+            <h1>Login</h1>
+            <p>Please sign in to continue</p>
+        </div>
+        {{ {username,password} | json }}
+        <form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.value)">
+            <div class="row">
+                <i class="fa-solid fa-user"></i>
+                <input type="email" 
+                    name="email" id="email" required placeholder="Email or username"
+                    email
+                    #email = "ngModel"
+                    [(ngModel)] = "username"
+               />
+               <span class="error" *ngIf="email.touched && !email.valid">Please enter username or email</span>
+            </div>
+            <div class="row">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="pass" id="password" required 
+                placeholder="Password"
+                #pass = "ngModel" 
+                [(ngModel)] = "password"
+                />
+                <span class="error" *ngIf="pass.touched && !pass.valid">Please enter password </span>
+            </div>
+            <div class="row">
+                <h6>Forgot <a href="#"><span class="highlight">password / username? </span></a></h6>
+            </div>
+            <div class="row">
+                <input type="checkbox" name="remember" id="remember" />
+                <label for="remember" class="remember">Remember me</label>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit" class="btn-submit"[disabled]="!loginForm.valid">
+            </div>
+            <div class="row center">
+                <h6>Don't have an account yet <a routerLink="/register" routerLinkActive="active"><span
+                            class="highlight">Sign Up? </span></a></h6>
+            </div>
+        </form>
+        <!-- For testing data -->
+        <!-- <div class="user-data">
+            <ul [hidden]="hideData">
+                <li *ngIf="username.length > 0">
+                    <h4>User name is : </h4>{{username | uppercase}}
+                </li>
+                <li>
+                    <h4>Password is : </h4>{{password}}
+                </li>
+                <!-- <h3 [innerText]="hideData"></h3> -->
+        <!---      </ul>
+        </div>
+        <hr>
+        <!-- [ngClass]="e ? 'even':'odd'" -->
+        <!-- <div class="user-data" *ngFor="let user of  usernames"
+        >
+            <h4  [ngStyle]="{'font-size.px':user.length > 3 ? '30': '15'}">{{user}}</h4>
+        </div>
+        <div class="btn-toggle">
+            <button class="toggle" (click)="toggleView()">Hide/Show data</button>
+        </div>  -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+.user-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: wheat;
+    padding: 10px;
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+.btn-toggle{
+    
+    display: grid;
+    place-items: center;
+}
+
+.toggle{
+    width: 50%;
+    height: 5vh;
+    margin: 10px auto;
+    background: green;
+    border: 0;
+}
+
+.toggle:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.even{
+    background: blue;
+    opacity: 0.5;
+}
+
+.odd{
+    background: orangered;
+}
+
+/* valid selction */
+
+input.ng-invalid.ng-touched{
+    border: 2px solid red;
+}
+
+input.ng-valid{
+    border: 2px solid rgb(53, 199, 53);
+}
+
+.error{
+    font-size: 12px;
+    margin-left: 20px;
+}

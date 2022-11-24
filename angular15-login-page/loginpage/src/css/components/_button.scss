@@ -1,0 +1,13 @@
+/* submit button component */
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.btn-submit{
+   @include button-submit;
+}
+
+// .btn-submit:hover{
+//     background: $header;
+//     color: #F0F8FF;
+//     cursor: pointer;
+// }

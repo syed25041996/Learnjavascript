@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap");
+/* common classes and selectors */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #17B169;
+}
+
+.container {
+  width: 400px;
+  box-shadow: 5px 5px 5px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* submit button component */
+.btn-submit {
+  width: 80%;
+  height: 7vh;
+  margin-left: 15px;
+  background: #17B169;
+  color: #fff;
+  font-size: large;
+  font-weight: bolder;
+  border: 0;
+  border-radius: 10px;
+}
+.btn-submit:hover {
+  background: #1B4D3E;
+  color: #F0F8FF;
+  cursor: pointer;
+}
+
+/* checkbox component */
+input[type=checkbox] {
+  margin: 5px 0 10px 15px;
+}
+
+input[type=checkbox]:active {
+  background: #1B4D3E;
+}
+
+/* forgot password and sign up common component */
+h6 {
+  font-size: 12px;
+  font-weight: bolder;
+  line-height: 1;
+  margin: 0 48px 40px 15px;
+}
+
+.row a {
+  text-decoration: none;
+  color: #17B169;
+}
+
+.row a:hover {
+  color: #1B4D3E;
+}
+
+/* form component */
+form {
+  padding: 20px;
+  background: #fff;
+}
+
+.row {
+  margin: 10px;
+}
+
+input[type=email], input[type=password], input[type=tel], input[type=text] {
+  width: 80%;
+  height: 5vh;
+  padding: 10px;
+  border: 0;
+  border-bottom: 1px solid black;
+}
+
+/* sign up spacing component */
+.center {
+  margin-top: 15px;
+  margin-right: 50px;
+  text-align: center;
+}
+
+.spacing {
+  margin-bottom: 40px;
+}
+
+/* header */
+.header {
+  padding: 20px;
+  background: #1B4D3E;
+}
+
+.header > * {
+  margin-left: 20px;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.header p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Base */
+/* Componenents */
+/* Layout */
