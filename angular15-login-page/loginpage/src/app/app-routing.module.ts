@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { ChildwelcomeComponent } from './components/childwelcome/childwelcome.component';
 // import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
+import { ReactiveformComponent } from './components/reactiveform/reactiveform.component';
 import { RegisterComponent } from './components/register/register.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 
 const routes: Routes = [
   { path:  '', redirectTo: 'login', pathMatch:'full'},
+  { path: 'reactive', component: ReactiveformComponent },
   { path: 'childwelcome', component: ChildwelcomeComponent },
   { path: 'welcome/:username', component: WelcomeComponent },
   { path: 'welcome', component: WelcomeComponent },
