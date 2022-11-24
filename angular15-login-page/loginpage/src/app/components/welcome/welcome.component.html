@@ -1,1 +1,3 @@
-<p>welcome works!</p>
+<p class ="welcome-msg">Welcome {{user}} to your list</p>
+
+<app-childwelcome [names]="movies" (selectedNameEmitter) = "selectedNameByUser($event)"></app-childwelcome>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { SubmitServiceService } from 'src/app/services/submit-service.service';
 
 @Component({
   selector: 'app-register',
@@ -14,14 +15,14 @@ export class RegisterComponent {
   userPassword : string = '';
   userConfirmPassword : string = '';
 
-  constructor(private routes: Router){}
+  constructor(private _routes: Router, private _message : SubmitServiceService){}
 
-  goToLogin(){
-    
+  registerMessage(){
+    alert(this._message.registerMessage);
   }
 
   getValues(values : any){
     console.log(values)
-    this.routes.navigate(['/login']);
+    this._routes.navigate(['/login']);
   }
 }

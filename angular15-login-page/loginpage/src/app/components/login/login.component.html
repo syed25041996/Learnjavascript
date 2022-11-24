@@ -23,7 +23,6 @@
                 <i class="fa-solid fa-user"></i>
                 <input type="email" 
                     name="email" id="email" required placeholder="Email or username"
-                    email
                     #email = "ngModel"
                     [(ngModel)] = "username"
                />
@@ -46,13 +45,14 @@
                 <label for="remember" class="remember">Remember me</label>
             </div>
             <div class="row">
-                <input type="submit" value="Submit" class="btn-submit"[disabled]="!loginForm.valid">
+                <input type="submit" value="Submit" class="btn-submit"[disabled]="!loginForm.valid" (click)="alertMessage()">
             </div>
             <div class="row center">
                 <h6>Don't have an account yet <a routerLink="/register" routerLinkActive="active"><span
                             class="highlight">Sign Up? </span></a></h6>
             </div>
         </form>
+        <!-- <app-welcome [user] = "username"></app-welcome> -->
         <!-- For testing data -->
         <!-- <div class="user-data">
             <ul [hidden]="hideData">

@@ -1,0 +1,7 @@
+<p>Movies to be watched</p>
+<div class="container">
+    <ul *ngFor="let name of names">
+        <li>{{name}}</li>
+        <button (click)="nameSelected(name)">Get Movie</button>
+    </ul>
+</div>

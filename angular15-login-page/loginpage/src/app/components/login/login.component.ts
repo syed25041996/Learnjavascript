@@ -26,16 +26,16 @@ export class LoginComponent {
     this.hideData = !this.hideData;
   }
 
-  constructor(private _submitAlert: SubmitServiceService, private routes : Router ){
+  constructor(private _submitAlert: SubmitServiceService, private _routes : Router ){
   }
 
   public alertMessage(){
-    alert(this._submitAlert.message)
+    alert(this._submitAlert.loginMessage)
   }
 
   public userLogin(item : any){
     console.log(item)
-    this.routes.navigate(['/welcome']);
+    this._routes.navigate(['/welcome',this.username]);
   }
 
 }

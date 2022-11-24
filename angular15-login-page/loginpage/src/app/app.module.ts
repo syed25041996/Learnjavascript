@@ -7,6 +7,7 @@ import { LoginComponent } from './components/login/login.component';
 import { SubmitServiceService } from './services/submit-service.service';
 import { NgModule } from '@angular/core';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import { ChildwelcomeComponent } from './components/childwelcome/childwelcome.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
     RegisterComponent,
     LoginComponent,
     WelcomeComponent,
+    ChildwelcomeComponent,
   ],
   imports: [
     BrowserModule,

@@ -4,7 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class SubmitServiceService {
-  message : string = "Thank you for submitting"
+  loginMessage : string = "You've been logged in successfully"
+  registerMessage : string = "You've been registered successfully"
   constructor() {
    }
 }
