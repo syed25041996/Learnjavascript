@@ -8,13 +8,14 @@ import { RegisterComponent } from './components/register/register.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 
 const routes: Routes = [
-  { path:  '', redirectTo: 'login', pathMatch:'full'},
+  { path:  '', redirectTo: 'admin/login', pathMatch:'full'},
   { path: 'reactive', component: ReactiveformComponent },
-  { path: 'childwelcome', component: ChildwelcomeComponent },
-  { path: 'welcome/:username', component: WelcomeComponent },
-  { path: 'welcome', component: WelcomeComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
+  {
+    path: 'admin' ,loadChildren : () => import('./admin/admin.module').then(mod => mod.AdminModule)
+  },
+  {
+    path : 'home', loadChildren: () => import('./home/home.module').then(mod => mod.HomeModule)
+  }
 ];
 
 @NgModule({

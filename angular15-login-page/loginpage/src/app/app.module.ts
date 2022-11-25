@@ -10,6 +10,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { ChildwelcomeComponent } from './components/childwelcome/childwelcome.component';
 import { ReactiveformComponent } from './components/reactiveform/reactiveform.component';
 
+console.log("basic loading")
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,7 @@ import { ReactiveformComponent } from './components/reactiveform/reactiveform.co
     LoginComponent,
     WelcomeComponent,
     ChildwelcomeComponent,
-    ReactiveformComponent,
+    ReactiveformComponent
   ],
   imports: [
     BrowserModule,

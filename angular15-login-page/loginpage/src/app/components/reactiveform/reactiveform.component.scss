@@ -1,3 +1,20 @@
 .btn-submit:disabled{
     background: grey;
 }
+
+input:disabled{
+    background: orangered;
+}
+
+input.ng-invalid.ng-touched{
+    border: 2px solid red;
+}
+
+input.ng-valid{
+    border: 2px solid rgb(53, 199, 53);
+}
+
+.error{
+    font-size: 12px;
+    margin-left: 20px;
+}

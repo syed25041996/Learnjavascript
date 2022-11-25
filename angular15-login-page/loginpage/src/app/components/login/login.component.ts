@@ -35,7 +35,7 @@ export class LoginComponent {
 
   public userLogin(item : any){
     console.log(item)
-    this._routes.navigate(['/welcome',this.username]);
+    this._routes.navigate(['/home/welcome',this.username]);
   }
 
 }
