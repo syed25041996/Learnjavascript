@@ -9,6 +9,9 @@ import { NgModule } from '@angular/core';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { ChildwelcomeComponent } from './components/childwelcome/childwelcome.component';
 import { ReactiveformComponent } from './components/reactiveform/reactiveform.component';
+import { FoodComponent } from './components/food/food.component';
+import { HttpClientModule } from '@angular/common/http';
+import { QuoteComponent } from './components/quote/quote.component';
 
 console.log("basic loading")
 @NgModule({
@@ -18,13 +21,16 @@ console.log("basic loading")
     LoginComponent,
     WelcomeComponent,
     ChildwelcomeComponent,
-    ReactiveformComponent
+    ReactiveformComponent,
+    FoodComponent,
+    QuoteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [SubmitServiceService],
   bootstrap : [AppComponent]

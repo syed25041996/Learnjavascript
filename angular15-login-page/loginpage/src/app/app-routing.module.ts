@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ChildwelcomeComponent } from './components/childwelcome/childwelcome.component';
+import { FoodComponent } from './components/food/food.component';
 // import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
+import { QuoteComponent } from './components/quote/quote.component';
 import { ReactiveformComponent } from './components/reactiveform/reactiveform.component';
 import { RegisterComponent } from './components/register/register.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 
 const routes: Routes = [
   { path:  '', redirectTo: 'admin/login', pathMatch:'full'},
+  {path: 'food', component:FoodComponent},
+  {path: 'quote', component:QuoteComponent},
   { path: 'reactive', component: ReactiveformComponent },
   {
     path: 'admin' ,loadChildren : () => import('./admin/admin.module').then(mod => mod.AdminModule)

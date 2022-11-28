@@ -23,6 +23,6 @@ export class RegisterComponent {
 
   getValues(values : any){
     console.log(values)
-    this._routes.navigate(['/login']);
+    this._routes.navigate(['/admin/login']);
   }
 }

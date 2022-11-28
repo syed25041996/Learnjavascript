@@ -2,6 +2,7 @@ import { Component, Inject } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { distinctUntilChanged } from 'rxjs';
 // import { DetailsService } from 'src/app/services/details.service';
+import { gmailValidator } from './gmailValidator';
 
 @Component({
   selector: 'app-reactiveform',
@@ -14,7 +15,7 @@ export class ReactiveformComponent {
 
   registerForm: any = new FormGroup({
     username: new FormControl('', [Validators.required]),
-    userEmail: new FormControl('', [Validators.required, Validators.minLength(3)]),
+    userEmail: new FormControl('', [Validators.required, gmailValidator()]),
     userPhone: new FormControl(''),
     userPassword: new FormControl(''),
     userConfirmPassword: new FormControl(''),
