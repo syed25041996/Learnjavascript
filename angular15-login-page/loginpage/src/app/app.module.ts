@@ -13,7 +13,7 @@ import { FoodComponent } from './components/food/food.component';
 import { HttpClientModule } from '@angular/common/http';
 import { QuoteComponent } from './components/quote/quote.component';
 
-console.log("basic loading")
+
 @NgModule({
   declarations: [
     AppComponent,

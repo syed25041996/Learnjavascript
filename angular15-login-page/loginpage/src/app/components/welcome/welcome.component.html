@@ -1,6 +1,11 @@
+<h1>{{title}}</h1>
+
+<h3 #country></h3>
 <p class ="welcome-msg">Welcome {{user}} to your list</p>
 
 <app-childwelcome [names]="movies" (selectedNameEmitter) = "selectedNameByUser($event)"></app-childwelcome>
+
+<button (click)="addMovie()">Add movie</button>
 
 
 <!-- <app-childwelcome></app-childwelcome> -->
